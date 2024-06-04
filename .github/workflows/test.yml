@@ -30,9 +30,7 @@ jobs:
 
       - name: Run tests
         run: |
-          NODE_OPTIONS="-r dd-trace/ci/init" 
-          DD_ENV=test-andrey 
-          DD_SERVICE=close-the-deal-tests npm test        
+          NODE_OPTIONS="-r dd-trace/ci/init" DD_ENV="test-andrey" DD_SERVICE="close-the-deal-tests" npm test        
         continue-on-error: true
         env:
           NODE_OPTIONS: -r dd-trace/ci/init
