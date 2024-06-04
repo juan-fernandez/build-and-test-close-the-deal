@@ -23,8 +23,7 @@ describe('Array Utilities', () => {
     expect(calculateAverage([10, 20, 30])).toBe(20);
   });
 
-  // **EARLY FLAKE DETECTION**: uncomment this test to test Early Flake Detection
-  // test('flakyIsNull should return true if the value is null', () => {
-  //   expect(flakyIsNull(null)).toBe(true);
-  // });
+  test('flakyIsNull should return true if the value is null', () => {
+    expect(flakyIsNull(null)).toBe(true);
+  });
 });
