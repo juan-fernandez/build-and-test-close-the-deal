@@ -10,10 +10,10 @@ function findMin(arr) {
   return Math.min(...arr);
 }
 
-// Function to calculate the average of numbers in an array
+// Function to calculate the average   of numbers in an array
 function calculateAverage(arr) {
   // **INTELLIGENT TEST RUNNER**: Uncomment this line to test Intelligent Test Runner
-  // if (!Array.isArray(arr) || arr.length === 0) return null;
+  if (!Array.isArray(arr) || arr.length === 0) return null;
   const sum = arr.reduce((a, b) => a + b, 0);
   return sum / arr.length;
 }
